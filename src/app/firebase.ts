@@ -18,13 +18,13 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAv0pktjTeRRTCJtaaKwbgICPGilAjvHIQ",
-  authDomain: "spotify-daylist-sharing.firebaseapp.com",
-  projectId: "spotify-daylist-sharing",
-  storageBucket: "spotify-daylist-sharing.appspot.com",
-  messagingSenderId: "166702937908",
-  appId: "1:166702937908:web:9f01348074e2c695dc5761",
-  measurementId: "G-L1W7MFSD9K",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
